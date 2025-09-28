@@ -10,7 +10,7 @@ btns.forEach(function(btn) {
         } 
         else if (btnValue === '=') {
             try {
-                inp.value = eval(inp.value) ; // Evaluate expression
+                inp.value = eval(inp.value).toString(); // Evaluate expression
             } catch (error) {
                 inp.value = 'Error'; // Handle invalid input
             }
